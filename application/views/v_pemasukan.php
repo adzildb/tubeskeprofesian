@@ -19,19 +19,10 @@
                <form class="user">
                 <div class="form-group">
 				  <div class="col-sm-9 mb-3 mb-sm-0">
-				  <h6 class="h6 text-gray-900">Tanggal</h6> <input type="date" class="form-control" id="exampleFirstName" placeholder="Tanggal Transaksi">
+				  <h6 class="h6 text-gray-900">Bulan</h6> <input type="date" class="form-control" id="exampleFirstName" placeholder="Tanggal Transaksi">
                   </div>
                 </div>
-               <div class="form-group">
-				  <div class="col-sm-9 mb-3 mb-sm-0">
-				  <h6 class="h6 text-gray-900">Keterangan</h6> <input type="text" class="form-control" id="exampleFirstName" placeholder="Keterangan">
-                  </div>
-               </div>
-			   <div class="form-group">
-				  <div class="col-sm-9 mb-3 mb-sm-0">
-				  <h6 class="h6 text-gray-900">Kas Debit</h6> <input type="number" class="form-control" id="exampleFirstName" placeholder="Nominal">
-                  </div>
-                </div>
+               
 				<div class="form-group">
 				  <div class="col-sm-9 mb-3 mb-sm-0">
 				  <button class="btn btn-primary" id="exampleFirstName">Submit</button>

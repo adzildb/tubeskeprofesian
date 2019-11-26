@@ -10,4 +10,16 @@ Class Spp extends CI_Controller{
         $this->load->view('v_spp_debit');
         $this->load->view('template/v_footer');
     }
+	
+	function credit(){
+        $this->load->view('template/v_header');
+        $this->load->view('v_spp_credit');
+        $this->load->view('template/v_footer');
+    }
+	
+	function rekap(){
+        $this->load->view('template/v_header');
+        $this->load->view('v_spp_rekap');
+        $this->load->view('template/v_footer');
+    }
 }

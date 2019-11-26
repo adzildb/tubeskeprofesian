@@ -63,9 +63,9 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="buttons.html">Kas Debit</a>
-            <a class="collapse-item" href="cards.html">Kas Credit</a>
-            <a class="collapse-item" href="cards.html">Lihat Rekap Bulanan</a>
+            <a class="collapse-item" href="<?= site_url("spp/debit")?>">Kas Debit</a>
+            <a class="collapse-item" href="<?= site_url("spp/credit")?>">Kas Credit</a>
+            <a class="collapse-item" href="<?= site_url("spp/rekap")?>">Lihat Rekap Bulanan</a>
           </div>
           </div>
       

@@ -28,6 +28,22 @@
 				  <button class="btn btn-primary" id="exampleFirstName">Submit</button>
                   </div>
                 </div>
+
+                <!-- Card Body -->
+                <div class="card-body">
+				
+               <form class="user">
+                <div class="form-group">
+				  <div class="col-sm-9 mb-3 mb-sm-0">
+				  <h6 class="h6 text-gray-900">Bulan</h6> <input type="date" class="form-control" id="exampleFirstName" placeholder="Tanggal Transaksi">
+                  </div>
+                </div>
+               
+				<div class="form-group">
+				  <div class="col-sm-9 mb-3 mb-sm-0">
+				  <button class="btn btn-primary" id="exampleFirstName">Submit</button>
+                  </div>
+                </div>
               </form>
                 </div>
               </div>

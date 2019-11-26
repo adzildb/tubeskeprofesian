@@ -61,15 +61,15 @@
           <span>Kas</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <a class="nav-link collapsed" href="#"  data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
             <i class="fas fa-fw fa-cog"></i>
             <span>PSB-DSP</span>
           </a> 
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
          <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="<?= site_url("Kas_debit")?>">Kas Debit</a>
-            <a class="collapse-item" href="<?= site_url("Kas_kredit")?>">Kas Kredit</a>
-            <a class="collapse-item" href="<?= site_url("Kas_lihatrekap")?>">Lihat Rekap Bulanan</a>
+            <a class="collapse-item" href="buttons.html">Kas Debit</a>
+            <a class="collapse-item" href="cards.html">Kas Kredit</a>
+            <a class="collapse-item" href="cards.html">Lihat Rekap Bulanan</a>
           </div>
           </div>
         </div>

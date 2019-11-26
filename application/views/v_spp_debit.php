@@ -10,56 +10,36 @@
           <!-- Content Row -->
           <div class="row">
             <!-- Area Chart -->
-            <div class="col-xl col-lg">
+            <div class="col-xl-8 col-lg-7">
               <div class="card shadow mb-4">
                 <!-- Card Header - Dropdown -->
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
+                  <h6 class="m-0 font-weight-bold text-primary">Input Kas Debit</h6>
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
-                  <form class="user">
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="text" class="form-control form-control-user" id="exampleFirstName" placeholder="First Name">
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control form-control-user" id="exampleLastName" placeholder="Last Name">
-                  </div>
-                </div>
+				
+               <form class="user">
                 <div class="form-group">
-                  <input type="email" class="form-control form-control-user" id="exampleInputEmail" placeholder="Email Address">
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-6 mb-3 mb-sm-0">
-                    <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="password" class="form-control form-control-user" id="exampleRepeatPassword" placeholder="Repeat Password">
+				  <div class="col-sm-9 mb-3 mb-sm-0">
+				  <h6 class="h6 text-gray-900">Tanggal</h6> <input type="date" class="form-control" id="exampleFirstName" placeholder="Tanggal Transaksi">
                   </div>
                 </div>
-                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                  Register Account
-                </a>
-                <hr>
-                <a href="index.html" class="btn btn-google btn-user btn-block">
-                  <i class="fab fa-google fa-fw"></i> Register with Google
-                </a>
-                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                  <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                </a>
+               <div class="form-group">
+				  <div class="col-sm-9 mb-3 mb-sm-0">
+				  <h6 class="h6 text-gray-900">Keterangan</h6> <input type="text" class="form-control" id="exampleFirstName" placeholder="Keterangan">
+                  </div>
+               </div>
+			   <div class="form-group">
+				  <div class="col-sm-9 mb-3 mb-sm-0">
+				  <h6 class="h6 text-gray-900">Kas Debit</h6> <input type="number" class="form-control" id="exampleFirstName" placeholder="Nominal">
+                  </div>
+                </div>
+				<div class="form-group">
+				  <div class="col-sm-9 mb-3 mb-sm-0">
+				  <button class="btn btn-primary" id="exampleFirstName">Submit</button>
+                  </div>
+                </div>
               </form>
                 </div>
               </div>

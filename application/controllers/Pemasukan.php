@@ -5,7 +5,7 @@ Class Pemasukan extends CI_Controller{
 
     }
 
-    function debit(){
+    function pemasukan_kas(){
         $this->load->view('template/v_header');
         $this->load->view('v_pemasukan');
         $this->load->view('template/v_footer');

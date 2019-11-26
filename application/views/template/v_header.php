@@ -90,7 +90,7 @@
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link active" href="#">Pemasukan Kas</a>
+        <a class="nav-link active" href="<?= site_url("pemasukan/pemasukan_kas")?>">Pemasukan Kas</a>
       </li>
 
       <!-- Divider -->

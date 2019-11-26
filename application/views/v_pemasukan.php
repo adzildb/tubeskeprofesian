@@ -21,6 +21,7 @@
 				  <div class="col-sm-9 mb-3 mb-sm-0">
 				  <h6 class="h6 text-gray-900">Bulan</h6>
                   <select name="bulan" class="form-control">
+                    <option value="Pilih Bulan">--- Pilih Bulan ---</option>  
                     <option value="Januari">Januari</option>
                     <option value="Februari">Februari</option>
                     <option value="Maret">Maret</option>

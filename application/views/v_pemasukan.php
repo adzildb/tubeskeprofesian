@@ -32,10 +32,10 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">No</th>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col">Keterangan</th>
+                        <th scope="col">Debit</th>
                         </tr>
                     </thead>
                     <tbody>

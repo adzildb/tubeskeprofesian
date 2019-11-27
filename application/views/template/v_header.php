@@ -88,9 +88,14 @@
         </div>
       </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
+      <!-- Nav Item - Pemasukan Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link active" href="<?= site_url("pemasukan/pemasukan_kas")?>">Pemasukan Kas</a>
+      </li>
+
+      <!-- Nav Item - Pengeluaran Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link active" href="<?= site_url("pengeluaran/pengeluaran_kas")?>">Pemasukan Kas</a>
       </li>
 
       <!-- Divider -->

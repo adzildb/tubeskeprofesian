@@ -10,5 +10,5 @@ Class Adduser extends CI_Controller{
     }
 
     function adduser() {
-        
+    }
 

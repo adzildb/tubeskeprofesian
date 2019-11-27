@@ -3,7 +3,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Rekap</h1>
+            <h1 class="h3 mb-0 text-gray-800">Pemasukan Kas</h1>
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div>
 
@@ -16,25 +16,26 @@
                 <!-- Card Body -->
                 <div class="card-body">
 				
-               <form class="user">
+               <form class="user" action="<?= site_url('spp/rekap')?>" method="get">
                 <div class="form-group">
 				  <div class="col-sm-9 mb-3 mb-sm-0">
 				  <h6 class="h6 text-gray-900">Bulan</h6>
                   <select name="bulan" class="form-control">
                     <option value="Pilih Bulan">--- Pilih Bulan ---</option>  
-                    <option value="Januari">Januari</option>
-                    <option value="Februari">Februari</option>
-                    <option value="Maret">Maret</option>
-                    <option value="April">April</option>
-                    <option value="Mei">Mei</option>
-                    <option value="Juni">Juni</option>
-                    <option value="Juli">Juli</option>
-                    <option value="Agustus">Agustus</option>
-                    <option value="September">September</option>
-                    <option value="Oktober">Oktober</option>
-                    <option value="November">November</option>
-                    <option value="Desember">Desember</option>
+                    <option value="01">Januari</option>
+                    <option value="02">Februari</option>
+                    <option value="03">Maret</option>
+                    <option value="04">April</option>
+                    <option value="05">Mei</option>
+                    <option value="06">Juni</option>
+                    <option value="07">Juli</option>
+                    <option value="08">Agustus</option>
+                    <option value="09">September</option>
+                    <option value="10">Oktober</option>
+                    <option value="11">November</option>
+                    <option value="12">Desember</option>
                   </select>
+				  <button class="btn btn-primary" id="exampleFirstName">Submit</button>
                 </div>
                 </div>
               </form>
@@ -44,37 +45,20 @@
                         <th scope="col">No</th>
                         <th scope="col">Tanggal</th>
                         <th scope="col">Keterangan</th>
-                        <th scope="col">Kas Debit</th>
-                        <th scope="col">Kas Kredit</th>
-                        <th scope="col">Total</th>
+                        <th scope="col">Debit</th>
                         </tr>
                     </thead>
                     <tbody>
+					<?php foreach($bulan as $row): $i = 1; ?>
                         <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td scope="row"><?php echo $i++ ?></td>
+                        <td><?php echo $row->tanggal; ?></td>
+                        <td><?php echo $row->keterangan; ?></td>
+                        <td><?php echo $row->nominal; ?></td>
                         </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        </tr>
-                        
+					<?php endforeach; 
+					print_r($this->db->last_query());
+						// die($bulan);?>
                     </tbody>
                 </table>
                 </div>

@@ -44,7 +44,9 @@
                         <th scope="col">No</th>
                         <th scope="col">Tanggal</th>
                         <th scope="col">Keterangan</th>
-                        <th scope="col">Kredit</th>
+                        <th scope="col">Kas Debit</th>
+                        <th scope="col">Kas Kredit</th>
+                        <th scope="col">Total</th>
                         </tr>
                     </thead>
                     <tbody>

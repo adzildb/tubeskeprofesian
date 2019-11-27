@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 27, 2019 at 02:34 PM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 5.6.34
+-- Generation Time: Nov 27, 2019 at 07:01 PM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -30,11 +30,20 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `kas` (
   `id` int(250) NOT NULL,
-  `tanggal` varchar(250) NOT NULL,
+  `tanggal` date NOT NULL,
   `keterangan` varchar(250) NOT NULL,
   `nominal` varchar(250) NOT NULL,
   `status` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kas`
+--
+
+INSERT INTO `kas` (`id`, `tanggal`, `keterangan`, `nominal`, `status`) VALUES
+(1, '2019-10-09', 'Pengeluaran 1', '150000', 'Kas Debit'),
+(2, '2019-11-26', 'Pemasukan 1', '100000', 'Kas Debit'),
+(3, '2019-11-29', 'Pengeluaran 3', '123', 'Kas Credit');
 
 -- --------------------------------------------------------
 
@@ -80,7 +89,7 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT for table `kas`
 --
 ALTER TABLE `kas`
-  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

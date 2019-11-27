@@ -14,34 +14,17 @@
               </div>
               <!-- Default form subscription -->
               <form class="text-center border border-light p-5" action="#!">
-
-              <p class="h4 mb-4">Subscribe</p>
-
-              <p>Join our mailing list. We write rarely, but only the best content.</p>
-
-              <p>
-                  <a href="" target="_blank">See the last newsletter</a>
-              </p>
-
               <!-- Name -->
-              <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Name">
+              <input type="username" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Username">
 
               <!-- Email -->
-              <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+              <input type="password" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="Password">
 
               <!-- Sign in button -->
-              <button class="btn btn-info btn-block" type="submit">Sign in</button>
+              <button class="btn btn-info btn-block" type="submit">Create User</button>
 
 
               </form>
-              <!-- Default form subscription -->
-              <hr>
-              <div class="text-center">
-                <a class="small" href="forgot-password.html">Forgot Password?</a>
-              </div>
-              <div class="text-center">
-                <a class="small" href="login.html">Already have an account? Login!</a>
-              </div>
             </div>
           </div>
         </div>

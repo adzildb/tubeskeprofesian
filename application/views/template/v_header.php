@@ -95,7 +95,7 @@
 
       <!-- Nav Item - Pengeluaran Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link active" href="<?= site_url("pengeluaran/pengeluaran_kas")?>">Pemasukan Kas</a>
+        <a class="nav-link active" href="<?= site_url("pengeluaran/pengeluaran_kas")?>">Pengeluaran Kas</a>
       </li>
 
       <!-- Divider -->

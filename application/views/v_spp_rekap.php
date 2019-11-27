@@ -64,7 +64,20 @@
                         </tr>
                         <tr>
                         <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
+                        <td>Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">4</th>
+                        <td>Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>@twitter</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">5</th>
+                        <td>Larry the Bird</td>
+                        <td>@twitter</td>
                         <td>@twitter</td>
                         </tr>
                     </tbody>

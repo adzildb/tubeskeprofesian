@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 26, 2019 at 12:52 PM
+-- Generation Time: Nov 27, 2019 at 02:34 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 5.6.34
 
@@ -21,6 +21,20 @@ SET time_zone = "+00:00";
 --
 -- Database: `keuangan`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kas`
+--
+
+CREATE TABLE `kas` (
+  `id` int(250) NOT NULL,
+  `tanggal` varchar(250) NOT NULL,
+  `keterangan` varchar(250) NOT NULL,
+  `nominal` varchar(250) NOT NULL,
+  `status` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -47,10 +61,26 @@ INSERT INTO `login` (`username`, `password`, `level`) VALUES
 --
 
 --
+-- Indexes for table `kas`
+--
+ALTER TABLE `kas`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`username`(1));
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `kas`
+--
+ALTER TABLE `kas`
+  MODIFY `id` int(250) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

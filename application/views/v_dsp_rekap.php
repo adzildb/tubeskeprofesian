@@ -3,7 +3,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Pemasukan Kas</h1>
+            <h1 class="h3 mb-0 text-gray-800">Rekap DSP - PSB</h1>
             <!--<a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>-->
           </div>
 
@@ -16,7 +16,7 @@
                 <!-- Card Body -->
                 <div class="card-body">
 				
-               <form class="user" action="<?= site_url('spp/rekap')?>" method="get">
+               <form class="user" action="<?= site_url('dsp/rekap')?>" method="get">
                 <div class="form-group">
 				  <div class="col-sm-9 mb-3 mb-sm-0">
 				  <h6 class="h6 text-gray-900">Bulan</h6>
@@ -59,6 +59,7 @@
                         <td><?php echo $row->keterangan; ?></td>
                         <td>Rp<?php echo number_format($row->nominal_debit,0,',','.'); ?></td>
                         <td>Rp<?php echo number_format($row->nominal_kredit,0,',','.'); ?></td>
+                        </tr>
 					<?php endforeach; 
 				//	print_r($this->db->last_query());
 						// die($bulan);?>

@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-Class M_spp extends CI_Model{
+Class M_pemasukan extends CI_Model{
     
  
 	function find($bln){
@@ -9,7 +9,7 @@ Class M_spp extends CI_Model{
 		// $bulan2 = date("m",strtotime($bulan));
 		
 		$this->db->where('MONTH(tanggal)',$bln);
-		$this->db->where("(jenis = 'SPP')");
+		$this->db->where("(status = 'Kas Debit')");
 		$query = $this->db->get('kas');
 		
 		return $query->result();

@@ -31,7 +31,7 @@
                </div>
 			   <div class="form-group">
 				  <div class="col-sm-9 mb-3 mb-sm-0">
-				  <h6 class="h6 font-weight-bold  text-gray-900">Kas Credit</h6> <input type="number" class="form-control" id="exampleFirstName" name="nominal" placeholder="Nominal">
+				  <h6 class="h6 font-weight-bold  text-gray-900">Kas Credit</h6> <input type="number" class="form-control" id="exampleFirstName" name="nominal_kredit" placeholder="Nominal">
                   </div>
                 </div>
 				<div class="form-group">

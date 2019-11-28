@@ -2,6 +2,7 @@
 Class Login extends CI_Controller{
     function __construct(){
         parent::__construct();
+        
         $this->load->model("m_login");
     }
 
@@ -16,24 +17,25 @@ Class Login extends CI_Controller{
         
         $where = array(
          "username" => $username,
-         "password" => $password
+         "password" => md5($password)
          );
         $result = $this->m_login->read($where);
-        print_r($this->db->last_query());
+       // print_r($this->db->last_query());
 
 
        if (count($result) !=0) {
          $level = $result[0]->level;
+         
          $this->session->set_userdata("level", $level);
-         if ($level == 0){
+         $username = $result[0]->username;
+         $this->session->set_userdata("username", $username);
          redirect("index");
-//         echo $sql;
-         } else {
+       }else  {
          //feedback login gagal
-         $this->session->set_flashdata("error","Username atau Password salah");
-         redirect("login");
+         
+         redirect("login/index");
         }
-         }
+         
        }
        
        function logout() {

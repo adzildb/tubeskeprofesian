@@ -10,7 +10,7 @@
   <meta name="author" content="">
 
   <link rel="icon" type="image/png" href="<?php echo base_url();?>/assets/img/lambang tk.png"/>
-  <title>Web Kelola Keuangan - Dashboard</title>
+  <title>Web Kelola Keuangan - TK Al-Jannah</title>
 
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url("assets")?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

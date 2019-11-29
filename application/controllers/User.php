@@ -3,7 +3,7 @@ Class User extends CI_Controller{
     function __construct(){
         parent::__construct();
         $level = $this->session->userdata('level');
-        if (!$level == 0){
+        if ($level == NULL){
             redirect("login");
         }
         $this->load->model("M_user");

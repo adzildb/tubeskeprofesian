@@ -4,7 +4,7 @@ Class Index extends CI_Controller{
         
         parent::__construct();
         $level = $this->session->userdata('level');
-        if (!$level == 0 and !$level == 1){
+        if ($level == NULL){
             redirect("login");
         }
     }
